@@ -2,7 +2,7 @@ class Mm < Formula
   desc "Media microservices for audiovisual archives"
   homepage "https://github.com/mediamicroservices/mm"
   url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.11.tar.gz"
-  sha256 "7821c1b7c8a47db38b39cb8668d8d892e0c0d650a87a449a50e49ea39dcbff88"
+  sha256 "7058df9f3a7209d7fc1243a9937bbba4496156656336919c3e515bad6b05cabc"
   head "https://github.com/mediamicroservices/mm.git"
 
   depends_on "amiaopensource/amiaos/gtkdialog"
