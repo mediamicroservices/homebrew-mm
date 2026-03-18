@@ -4,6 +4,7 @@ class Mm < Formula
   url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.21.tar.gz"
   sha256 "e530a40a9e558952d7daba032d96006349cc752415c60798f4dc12d9b797268a"
   head "https://github.com/mediamicroservices/mm.git"
+  revision 1
 
   depends_on "amiaopensource/amiaos/gtkdialog"
   depends_on "cowsay"
@@ -14,7 +15,7 @@ class Mm < Formula
   end
   depends_on "dvdauthor"
   depends_on "exiftool"
-  depends_on "ffmpeg"
+  depends_on "ffmpeg-full"
   depends_on "flac"
   depends_on "gnumeric"
   depends_on "md5deep"
@@ -26,6 +27,8 @@ class Mm < Formula
   depends_on "xmlstarlet"
 
   def install
+    ffmpeg_full = Formula["ffmpeg-full"]
+    ENV.prepend_path "PATH", ffmpeg_full.opt_bin
     bin.install "aipupgrade"
     bin.install "audiotest"
     bin.install "barcodeinterpret"
