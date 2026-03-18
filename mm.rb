@@ -1,10 +1,9 @@
 class Mm < Formula
   desc "Media microservices for audiovisual archives"
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.20.tar.gz"
-  sha256 "3c23e0512cd3138ea8e85cb103a9115418b1eb8bfb1b3b8e4e74fcede5dc6733"
+  url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.21.tar.gz"
+  sha256 "e530a40a9e558952d7daba032d96006349cc752415c60798f4dc12d9b797268a"
   head "https://github.com/mediamicroservices/mm.git"
-  revision 1
 
   depends_on "amiaopensource/amiaos/gtkdialog"
   depends_on "cowsay"
@@ -62,6 +61,7 @@ class Mm < Formula
     bin.install "makeprores"
     bin.install "makeqctoolsreport"
     bin.install "makeresourcespace"
+    bin.install "makestudio"
     bin.install "makewaveform"
     bin.install "makewindow"
     bin.install "makeyoutube"
