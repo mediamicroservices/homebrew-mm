@@ -1,8 +1,8 @@
 class Mm < Formula
   desc "Media microservices for audiovisual archives"
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.23.tar.gz"
-  sha256 "7c1a6e3a91e4b3db7359daeb3805df840832a39832591f926d08cfa7cc009d09"
+  url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.24.tar.gz"
+  sha256 "bad5a8e929d6dc0aae7c3657236c2b6647878f8a29b203e4dd7e807c69c1503c"
   head "https://github.com/mediamicroservices/mm.git"
 
   depends_on "amiaopensource/amiaos/gtkdialog"
@@ -44,8 +44,6 @@ class Mm < Formula
     bin.install "makebroadcast"
     bin.install "makebroadcast_policies.xml"
     bin.install "makederiv"
-    bin.install "makedvd"
-    bin.install "makedvd_policies.xml"
     bin.install "makefingerprint"
     bin.install "makeflv"
     bin.install "makeframemd5"
