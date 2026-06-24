@@ -1,18 +1,12 @@
 class Mm < Formula
   desc "Media microservices for audiovisual archives"
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.28.tar.gz"
-  sha256 "41f62cb85f221f02dd8ae0ab2cb0d5a6e9af35130b208759e978d3171d1074ec"
+  url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.29.tar.gz"
+  sha256 "917c507572a4b506bff6e2a0624e2419358b5f5c91870dc1cf9b1a798a712900"
   head "https://github.com/mediamicroservices/mm.git"
 
   depends_on "amiaopensource/amiaos/gtkdialog"
   depends_on "cowsay"
-  if OS.mac?
-    depends_on "dvdrtools"
-  else
-    depends_on "cdrtools"
-  end
-  depends_on "dvdauthor"
   depends_on "exiftool"
   depends_on "ffmpeg-full"
   depends_on "flac"
@@ -28,7 +22,6 @@ class Mm < Formula
   def install
     bin.install "aipupgrade"
     bin.install "audiotest"
-    bin.install "barcodeinterpret"
     bin.install "blackatends"
     bin.install "checksum2filemaker"
     bin.install "checksumpackage"
@@ -45,9 +38,7 @@ class Mm < Formula
     bin.install "makebroadcast_policies.xml"
     bin.install "makederiv"
     bin.install "makefingerprint"
-    bin.install "makeflv"
     bin.install "makeframemd5"
-    bin.install "makeframes"
     bin.install "makegifsummary"
     bin.install "makelossless"
     bin.install "makemetadata"
@@ -70,18 +61,14 @@ class Mm < Formula
     bin.install "mmconfig"
     bin.install "mmfunctions"
     bin.install "mmtest"
-    bin.install "mmupdate"
     bin.install "object_policies.xml"
     bin.install "paperingest"
     bin.install "phasecheck"
     bin.install "qatesting"
     bin.install "quickcompare"
     bin.install "removeDSStore"
-    bin.install "restructureForCompliance"
-    bin.install "rewrapmxf"
     bin.install "uploadomneon"
     bin.install "verifypackage"
     bin.install "verifytree"
-    bin.install "xdcamingest"
   end
 end
