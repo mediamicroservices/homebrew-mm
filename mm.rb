@@ -1,8 +1,8 @@
 class Mm < Formula
   desc "Media microservices for audiovisual archives"
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.29.tar.gz"
-  sha256 "917c507572a4b506bff6e2a0624e2419358b5f5c91870dc1cf9b1a798a712900"
+  url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.30.tar.gz"
+  sha256 "dbc05b592edd813df92a87fd2a9efa358e0a636dcabdd94d6fce8ea170c272c1"
   head "https://github.com/mediamicroservices/mm.git"
 
   depends_on "amiaopensource/amiaos/gtkdialog"
@@ -32,6 +32,7 @@ class Mm < Formula
     bin.install "fix_rewrap"
     bin.install "fix_timecode"
     bin.install "fix_volume"
+    bin.install "getstanza"
     bin.install "ingestfile"
     bin.install "makeaudiographs"
     bin.install "makebroadcast"
@@ -67,6 +68,7 @@ class Mm < Formula
     bin.install "qatesting"
     bin.install "quickcompare"
     bin.install "removeDSStore"
+    bin.install "upload2stanza"
     bin.install "uploadomneon"
     bin.install "verifypackage"
     bin.install "verifytree"
