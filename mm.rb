@@ -1,8 +1,8 @@
 class Mm < Formula
   desc "Media microservices for audiovisual archives"
   homepage "https://github.com/mediamicroservices/mm"
-  url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.30.tar.gz"
-  sha256 "dbc05b592edd813df92a87fd2a9efa358e0a636dcabdd94d6fce8ea170c272c1"
+  url "https://github.com/mediamicroservices/mm/archive/refs/tags/mm_v2.31.tar.gz"
+  sha256 "bf5da693ddc35ba474f7ade59a39cd50505098e518deb4bbed79105b2b997860"
   head "https://github.com/mediamicroservices/mm.git"
 
   depends_on "amiaopensource/amiaos/gtkdialog"
@@ -14,7 +14,9 @@ class Mm < Formula
   depends_on "md5deep"
   depends_on "media-info"
   depends_on "mediaconch"
+  depends_on "pdfunite"
   depends_on "rsync"
+  depends_on "tesseract"
   depends_on "tnftp"
   depends_on "tree"
   depends_on "xmlstarlet"
